@@ -8,18 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		016892E028C05AA100519228 /* InformationManagementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016892DF28C05AA100519228 /* InformationManagementApp.swift */; };
-		016892E228C05AA100519228 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016892E128C05AA100519228 /* ContentView.swift */; };
+		016892E228C05AA100519228 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016892E128C05AA100519228 /* HomeView.swift */; };
 		016892E428C05AAC00519228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 016892E328C05AAC00519228 /* Assets.xcassets */; };
 		016892E828C05AAC00519228 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 016892E728C05AAC00519228 /* Preview Assets.xcassets */; };
+		016892F928C0600300519228 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016892F828C0600300519228 /* Constants.swift */; };
+		016892FB28C0606800519228 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016892FA28C0606800519228 /* CommunityView.swift */; };
+		016892FD28C0607100519228 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016892FC28C0607100519228 /* ProfileView.swift */; };
+		016892FF28C0612900519228 /* TabUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016892FE28C0612900519228 /* TabUIView.swift */; };
+		0168930228C0C1CF00519228 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0168930128C0C1CF00519228 /* SignInView.swift */; };
+		0168930428C0C1DC00519228 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0168930328C0C1DC00519228 /* SignUpView.swift */; };
+		0168930628C0D08400519228 /* OnboardingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0168930528C0D08400519228 /* OnboardingTabView.swift */; };
+		0168930828C0D1EF00519228 /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0168930728C0D1EF00519228 /* OnboardingCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		016892DC28C05AA100519228 /* InformationManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InformationManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		016892DF28C05AA100519228 /* InformationManagementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationManagementApp.swift; sourceTree = "<group>"; };
-		016892E128C05AA100519228 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		016892E128C05AA100519228 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		016892E328C05AAC00519228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		016892E528C05AAC00519228 /* InformationManagement.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InformationManagement.entitlements; sourceTree = "<group>"; };
 		016892E728C05AAC00519228 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		016892F828C0600300519228 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		016892FA28C0606800519228 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		016892FC28C0607100519228 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		016892FE28C0612900519228 /* TabUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabUIView.swift; sourceTree = "<group>"; };
+		0168930128C0C1CF00519228 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		0168930328C0C1DC00519228 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		0168930528C0D08400519228 /* OnboardingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTabView.swift; sourceTree = "<group>"; };
+		0168930728C0D1EF00519228 /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +68,14 @@
 		016892DE28C05AA100519228 /* InformationManagement */ = {
 			isa = PBXGroup;
 			children = (
+				016892F228C05BE000519228 /* Utils */,
+				016892F128C05B4100519228 /* Helpers */,
+				016892F028C05B3300519228 /* ModelViews */,
+				016892EF28C05B1D00519228 /* Views */,
+				016892EE28C05B0A00519228 /* Models */,
 				016892DF28C05AA100519228 /* InformationManagementApp.swift */,
-				016892E128C05AA100519228 /* ContentView.swift */,
-				016892E328C05AAC00519228 /* Assets.xcassets */,
 				016892E528C05AAC00519228 /* InformationManagement.entitlements */,
+				016892E328C05AAC00519228 /* Assets.xcassets */,
 				016892E628C05AAC00519228 /* Preview Content */,
 			);
 			path = InformationManagement;
@@ -67,6 +87,98 @@
 				016892E728C05AAC00519228 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		016892EE28C05B0A00519228 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		016892EF28C05B1D00519228 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				016892F728C05CA900519228 /* Admin */,
+				016892F328C05C1900519228 /* Onboarding */,
+				0168930028C0648100519228 /* Navigation */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		016892F028C05B3300519228 /* ModelViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelViews;
+			sourceTree = "<group>";
+		};
+		016892F128C05B4100519228 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		016892F228C05BE000519228 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				016892F828C0600300519228 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		016892F328C05C1900519228 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				0168930128C0C1CF00519228 /* SignInView.swift */,
+				0168930328C0C1DC00519228 /* SignUpView.swift */,
+				0168930528C0D08400519228 /* OnboardingTabView.swift */,
+				0168930728C0D1EF00519228 /* OnboardingCardView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		016892F428C05C2700519228 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				016892E128C05AA100519228 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		016892F528C05C3100519228 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				016892FC28C0607100519228 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		016892F628C05C3C00519228 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				016892FA28C0606800519228 /* CommunityView.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		016892F728C05CA900519228 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		0168930028C0648100519228 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				016892FE28C0612900519228 /* TabUIView.swift */,
+				016892F428C05C2700519228 /* Home */,
+				016892F628C05C3C00519228 /* Community */,
+				016892F528C05C3100519228 /* Profile */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +251,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				016892E228C05AA100519228 /* ContentView.swift in Sources */,
+				016892E228C05AA100519228 /* HomeView.swift in Sources */,
+				0168930628C0D08400519228 /* OnboardingTabView.swift in Sources */,
+				0168930228C0C1CF00519228 /* SignInView.swift in Sources */,
 				016892E028C05AA100519228 /* InformationManagementApp.swift in Sources */,
+				016892FF28C0612900519228 /* TabUIView.swift in Sources */,
+				0168930828C0D1EF00519228 /* OnboardingCardView.swift in Sources */,
+				0168930428C0C1DC00519228 /* SignUpView.swift in Sources */,
+				016892FD28C0607100519228 /* ProfileView.swift in Sources */,
+				016892FB28C0606800519228 /* CommunityView.swift in Sources */,
+				016892F928C0600300519228 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
