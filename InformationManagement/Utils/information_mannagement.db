@@ -1,0 +1,111 @@
+--
+    CREATE DATABASE information_management;
+
+
+    --------------------------------------------------------------------------------------------------------------
+
+
+    CREATE TABLE Users (
+
+        id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+        role ENUM('super_admin', 'community_admin', 'ordinary_user') NOT NULL DEFAULT 'ordinary_user'
+        
+    );
+
+
+    --------------------------------------------------------------------------------------------------------------
+
+
+    CREATE TABLE Students (
+
+      id INT PRIMARY KEY NOT NULL,
+      name VARCHAR(50) NOT NULL,
+      username VARCHAR(50) UNIQUE NOT NULL,
+      password VARCHAR(100) NOT NULL,
+      member_of TEXT[],
+      FOREIGN KEY (students_id) REFERENCES Users(id)
+      
+    );
+
+
+    --------------------------------------------------------------------------------------------------------------
+
+
+    CREATE Societies (
+
+        id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+        admin VARCHAR(50) NOT NULL,
+        name VARCHAR(100) NOT NULL,
+        description VARCHAR(255) NULL,
+        approved BOOLEAN DEFAULT false
+        
+    );
+
+
+    --------------------------------------------------------------------------------------------------------------
+
+
+    CREATE TABLE Records (
+
+      id INT PRIMARY KEY NOT NULL,
+      members INT DEFAULT 0,
+      activities INT DEFAULT 0,
+      publications INT DEFAULT 0,
+      members_deleted INT DEFAULT 0,
+      activities_deleted INT DEFAULT 0,
+      engagement DECIMAL(5, 2) DEFAULT 100.00,
+      date_created DATE DEFAULT NOW(),
+      FOREIGN KEY (records_id) REFERENCES Societies(id)
+      
+    );
+
+
+    --------------------------------------------------------------------------------------------------------------
+
+
+    CREATE Activities (
+
+        id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+        sid INT NOT NULL,
+        title VARCHAR(100) NOT NULL,
+        name VARCHAR(100) NOT NULL,
+        description VARCHAR(255) NULL,
+        status ENUM('onschedule', 'ongoing', 'ended') NOT NULL DEFAULT 'onschedule',
+        date DATE NULL,
+        time DATE NULL,
+        FOREIGN KEY (activities_society_id) REFERENCES Societies(id)
+        
+    );
+
+
+    --------------------------------------------------------------------------------------------------------------
+
+
+    CREATE Publications (
+
+        id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+        aid INT NOT NULL,
+        uid INT NOT NULL,
+        content VARCHAR(255) NOT NULL,
+        modifiable BOOLEAN NOT NULL DEFAULT false,
+        date_time DATE NOT NULL DEFAULT NOW(),
+        FOREIGN KEY (publications_activity_id) REFERENCES Activities(id),
+        FOREIGN KEY (publications_user_id) REFERENCES Users(id)
+        
+    );
+
+
+    --------------------------------------------------------------------------------------------------------------
+
+
+    CREATE Participants (
+
+        id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+        aid INT NOT NULL,
+        FOREIGN KEY (participants_activity_id) REFERENCES Activities(id)
+        
+    );
+
+
+    --------------------------------------------------------------------------------------------------------------
+--

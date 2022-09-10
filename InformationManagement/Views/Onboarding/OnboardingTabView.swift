@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OnboardingTabView: View {
     
-    @State private var tab = Constants.signUp
+    @State private var tab: Int = Constants.signUp
     
     var body: some View {
         

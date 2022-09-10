@@ -19,6 +19,15 @@
 		0168930428C0C1DC00519228 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0168930328C0C1DC00519228 /* SignUpView.swift */; };
 		0168930628C0D08400519228 /* OnboardingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0168930528C0D08400519228 /* OnboardingTabView.swift */; };
 		0168930828C0D1EF00519228 /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0168930728C0D1EF00519228 /* OnboardingCardView.swift */; };
+		0168930A28C1B40C00519228 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0168930928C1B40C00519228 /* Wrapper.swift */; };
+		0170F08828CC3CF5009A081B /* students.json in Resources */ = {isa = PBXBuildFile; fileRef = 0170F08728CC3CF5009A081B /* students.json */; };
+		0170F08A28CC4065009A081B /* Students.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170F08928CC4065009A081B /* Students.swift */; };
+		0170F08C28CC40D1009A081B /* Societies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170F08B28CC40D1009A081B /* Societies.swift */; };
+		0170F08E28CC4211009A081B /* Publications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170F08D28CC4211009A081B /* Publications.swift */; };
+		0170F09028CC4329009A081B /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170F08F28CC4329009A081B /* Activities.swift */; };
+		0170F09228CC451E009A081B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170F09128CC451E009A081B /* Users.swift */; };
+		0170F09428CC462C009A081B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170F09328CC462C009A081B /* Model.swift */; };
+		0170F09628CC4886009A081B /* information_mannagement.db in Resources */ = {isa = PBXBuildFile; fileRef = 0170F09528CC4886009A081B /* information_mannagement.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +45,15 @@
 		0168930328C0C1DC00519228 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		0168930528C0D08400519228 /* OnboardingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTabView.swift; sourceTree = "<group>"; };
 		0168930728C0D1EF00519228 /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
+		0168930928C1B40C00519228 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
+		0170F08728CC3CF5009A081B /* students.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = students.json; sourceTree = "<group>"; };
+		0170F08928CC4065009A081B /* Students.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Students.swift; sourceTree = "<group>"; };
+		0170F08B28CC40D1009A081B /* Societies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Societies.swift; sourceTree = "<group>"; };
+		0170F08D28CC4211009A081B /* Publications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publications.swift; sourceTree = "<group>"; };
+		0170F08F28CC4329009A081B /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		0170F09128CC451E009A081B /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		0170F09328CC462C009A081B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0170F09528CC4886009A081B /* information_mannagement.db */ = {isa = PBXFileReference; lastKnownFileType = text; path = information_mannagement.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +86,12 @@
 		016892DE28C05AA100519228 /* InformationManagement */ = {
 			isa = PBXGroup;
 			children = (
-				016892F228C05BE000519228 /* Utils */,
-				016892F128C05B4100519228 /* Helpers */,
+				016892DF28C05AA100519228 /* InformationManagementApp.swift */,
 				016892F028C05B3300519228 /* ModelViews */,
 				016892EF28C05B1D00519228 /* Views */,
 				016892EE28C05B0A00519228 /* Models */,
-				016892DF28C05AA100519228 /* InformationManagementApp.swift */,
+				016892F228C05BE000519228 /* Utils */,
+				016892F128C05B4100519228 /* Resourses */,
 				016892E528C05AAC00519228 /* InformationManagement.entitlements */,
 				016892E328C05AAC00519228 /* Assets.xcassets */,
 				016892E628C05AAC00519228 /* Preview Content */,
@@ -92,6 +110,12 @@
 		016892EE28C05B0A00519228 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0170F09128CC451E009A081B /* Users.swift */,
+				0170F08928CC4065009A081B /* Students.swift */,
+				0170F08B28CC40D1009A081B /* Societies.swift */,
+				0170F08F28CC4329009A081B /* Activities.swift */,
+				0170F08D28CC4211009A081B /* Publications.swift */,
+				0170F09328CC462C009A081B /* Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -113,17 +137,19 @@
 			path = ModelViews;
 			sourceTree = "<group>";
 		};
-		016892F128C05B4100519228 /* Helpers */ = {
+		016892F128C05B4100519228 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				0170F08728CC3CF5009A081B /* students.json */,
 			);
-			path = Helpers;
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 		016892F228C05BE000519228 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				016892F828C0600300519228 /* Constants.swift */,
+				0170F09528CC4886009A081B /* information_mannagement.db */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -135,6 +161,7 @@
 				0168930328C0C1DC00519228 /* SignUpView.swift */,
 				0168930528C0D08400519228 /* OnboardingTabView.swift */,
 				0168930728C0D1EF00519228 /* OnboardingCardView.swift */,
+				0168930928C1B40C00519228 /* Wrapper.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -241,6 +268,8 @@
 			files = (
 				016892E828C05AAC00519228 /* Preview Assets.xcassets in Resources */,
 				016892E428C05AAC00519228 /* Assets.xcassets in Resources */,
+				0170F09628CC4886009A081B /* information_mannagement.db in Resources */,
+				0170F08828CC3CF5009A081B /* students.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +283,19 @@
 				016892E228C05AA100519228 /* HomeView.swift in Sources */,
 				0168930628C0D08400519228 /* OnboardingTabView.swift in Sources */,
 				0168930228C0C1CF00519228 /* SignInView.swift in Sources */,
+				0170F08A28CC4065009A081B /* Students.swift in Sources */,
 				016892E028C05AA100519228 /* InformationManagementApp.swift in Sources */,
 				016892FF28C0612900519228 /* TabUIView.swift in Sources */,
 				0168930828C0D1EF00519228 /* OnboardingCardView.swift in Sources */,
 				0168930428C0C1DC00519228 /* SignUpView.swift in Sources */,
+				0170F09228CC451E009A081B /* Users.swift in Sources */,
+				0170F09028CC4329009A081B /* Activities.swift in Sources */,
+				0170F09428CC462C009A081B /* Model.swift in Sources */,
 				016892FD28C0607100519228 /* ProfileView.swift in Sources */,
+				0168930A28C1B40C00519228 /* Wrapper.swift in Sources */,
+				0170F08C28CC40D1009A081B /* Societies.swift in Sources */,
 				016892FB28C0606800519228 /* CommunityView.swift in Sources */,
+				0170F08E28CC4211009A081B /* Publications.swift in Sources */,
 				016892F928C0600300519228 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

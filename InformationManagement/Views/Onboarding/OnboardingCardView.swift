@@ -22,9 +22,9 @@ struct OnboardingCardView: View {
             RoundedRectangle(cornerRadius: 15)
                 .foregroundStyle(Color.card)
                 .shadow(radius: 30)
-                .frame(maxWidth: 350, maxHeight: 450)
+                .frame(maxWidth: 350, maxHeight: 480)
                 
-                VStack (alignment: .leading, spacing: 15) {
+                VStack (alignment: .leading, spacing: 20) {
                     
                     Text(page)
                         .foregroundStyle(.white)
@@ -35,40 +35,38 @@ struct OnboardingCardView: View {
                         .font( .custom("Avenir", size: 16) )
                     
                     
-                    VStack (alignment: .center, spacing: 30) {
+                    VStack (alignment: .center, spacing: 35) {
                         
                         if !userExist {
                             
                             TextField( "", text: $email, prompt: Text("Email").foregroundColor(.white) )
-                                .background(
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .fill(Color.cardField)
-                                        .frame(width: 320, height: 40)
-                                )
+                                .modifier(wrapper)
                             
                         }
                         
                         TextField( "", text: $username, prompt: Text("Username").foregroundColor(.white) )
-                            .background(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .fill(Color.cardField)
-                                    .frame(width: 320, height: 40)
-                            )
+                            .modifier(wrapper)
                         
                         SecureField( "", text: $password, prompt: Text("Password").foregroundColor(.white) )
-                            .background(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .fill(Color.cardField)
-                                    .frame(width: 320, height: 40)
-                            )
+                            .modifier(wrapper)
                         
-                        Button (userExist ? "Sign Up" : "Sign In") {
+                        Button{} label: {
+                            
+                            Text(page)
+                                .foregroundStyle(Constants.radialGradient)
                             
                         }
+                            .font( .custom("Avenir Heavy", size: 18) )
                             .background(
                                 RoundedRectangle(cornerRadius: 10)
                                     .fill(Color.cardButton)
-                                    .frame(width: 280, height: 40)
+                                    .shadow( color: .white, radius: 3)
+                                    .frame(width: 300, height: 40)
+                            )
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(.white, lineWidth: 1)
+                                    .frame(width: 300, height: 40)
                             )
                         
                     }
@@ -84,7 +82,7 @@ struct OnboardingCardView: View {
                     HStack {
                         
                         Text("Already have an account?")
-                            .foregroundStyle(Color.cardLabel)
+                            .foregroundStyle(Constants.radialGradient)
                             .font( .custom("Avenir", size: 16) )
                         
                         
