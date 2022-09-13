@@ -13,4 +13,7 @@ struct Students: Codable, Hashable {
     var username: String
     var password: String
     
+    private var imageName: String?
+    var image: Image { Image(imageName ?? "not.available") }
+    
 }
